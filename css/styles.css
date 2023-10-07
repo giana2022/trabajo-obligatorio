@@ -1,3 +1,32 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Encabezado de la página*/
+header {
+    background-color: #6F1D1B;
+    color: #FFE6A7;
+    padding: 15px;
+    position: relative;
+}
+
+.titulo, h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+/*Nav sitio de escritorio*/
+nav {
+    background-color: #a32421;
+}
+
+a{
+    color:#FFE6A7;
+    text-decoration: none;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+}
+
 .linea-tiempo {
     width: 600px;
 }
