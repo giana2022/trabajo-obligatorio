@@ -1,6 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
 
 /*Encabezado de la página*/
 header {
@@ -14,19 +30,37 @@ header {
     text-align: center;
     font-size: 2rem;
 }
+
 /*Nav sitio de escritorio*/
 nav {
     background-color: #a32421;
+    padding: 5px;
 }
 
 a{
     color:#FFE6A7;
     text-decoration: none;
     font-size: large;
-    padding: 10px;
+    padding: 25px;
     margin: 5px;
 }
 
 .linea-tiempo {
     width: 600px;
+}
+
+.galeria-inicio {
+    visibility: hidden;
+}
+
+footer {
+    background-color: #432818;
+    color: #FFE6A7;
+    text-align: center;
+    padding: 15px;
+}
+
+/*contacto*/
+label, input, textarea, .tit-form {
+    margin: 0.5%;
 }
