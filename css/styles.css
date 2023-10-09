@@ -51,14 +51,23 @@ a{
     margin: 5px;
 }
 
+
 a:hover {
     background-color:#b82e2b;
     color: antiquewhite;
+    padding-bottom: 5px;
 }
+
+.nav-inicio a:hover {
+    background-color:#b82e2b;
+    color: antiquewhite;    
+}
+
 
 /*modificar*/
 header a:hover {
-    background-color: #c93d3c;
+    background-color:#6F1D1B;
+    color: antiquewhite;
 }
 
 
@@ -138,6 +147,39 @@ footer {
 
 
 /*PAGES*/
+
+/*Tecnicas fotograficas*/
+.periodo{
+    margin: 10px 10px
+}
+.periodo article {
+    text-align: justify;
+    margin: 3%;
+}
+
+.periodo p {
+    margin-bottom: 1%;
+}
+
+.periodo h3{
+    text-align: center;
+    margin-bottom: -1%;
+    margin-top: 1%;
+}
+
+/* .dos {
+    background-color: #a8312f;
+    color:#FFE6A7;
+}
+ */
+.img-tecnica {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    margin-bottom: -2%;
+}
+
+/*breakpoints*/
 
 /*contacto*/
 label, input, textarea, .tit-form {
