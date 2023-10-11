@@ -83,6 +83,7 @@ header a:hover {
     height: 550px;
     z-index: 0;
     background-color: aliceblue;
+    display: flex;
 }
 .img-muestra, .img-init{
     position: absolute;
@@ -123,6 +124,7 @@ h3 {
 .minimuestra {
     display: flex;    
     flex-direction: row;
+/*     flex-wrap: wrap; */
 }
 
 .img-minimuestra {
@@ -181,9 +183,19 @@ footer {
 
 /*breakpoints*/
 
+/*quiénes somos*/
+.quienes-somos-introd, .mapa {
+    margin-left: 1%;
+    margin-top: 2%;
+    text-align: center;
+}
+.mapa {
+    margin-bottom: 2%;
+}
 /*contacto*/
 label, input, textarea, .tit-form {
     margin: 0.5%;
+    margin-left: 1%;
 }
 
 
