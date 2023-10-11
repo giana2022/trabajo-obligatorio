@@ -122,14 +122,29 @@ h3 {
 
 /*minimuestra*/
 .minimuestra {
-    display: flex;    
-    flex-direction: row;
+    display: flex;
+    width: 600px;
+    height: 430px;    
+    margin-left: 27%;
+   /*  flex-direction: row; */
 /*     flex-wrap: wrap; */
 }
 
 .img-minimuestra {
-    width: 320px;
-    height: 400px;
+    /* width: 320px;
+    height: 400px; */
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.img-minimuestra:hover {
+    /* width: 320px;
+    height: 400px; */
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 /*linea del tiempo*/
