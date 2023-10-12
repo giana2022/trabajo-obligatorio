@@ -1,3 +1,281 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+header, nav, .intro, .linea-tiempo, footer {
+    z-index: 0;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/*Encabezado de la página*/
+header {
+    background-color: #6F1D1B;
+    color: #FFE6A7;
+    padding: 15px;
+    position: relative;
+}
+
+.titulo, h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*Nav sitio de escritorio*/
+nav {
+    background-color: #a32421;
+    padding: 5px;
+}
+
+a{
+    color:#FFE6A7;
+    text-decoration: none;
+    font-size: large;
+    padding: 25px;
+    padding-top: 5px;
+    margin: 5px;
+}
+
+
+a:hover {
+    background-color:#b82e2b;
+    color: antiquewhite;
+    padding-bottom: 5px;
+}
+
+.nav-inicio a:hover {
+    background-color:#b82e2b;
+    color: antiquewhite;    
+}
+
+
+/*modificar*/
+header a:hover {
+    background-color:#6F1D1B;
+    color: antiquewhite;
+}
+
+
+/*imagenes*/
+/* 
+.galeria-inicio {
+        visibility: hidden; 
+    } */
+    
+   
+.galeria-inicio {
+    width: 100%;
+    height: 550px;
+    z-index: 0;
+    background-color: aliceblue;
+    display: flex;
+}
+.img-muestra, .img-init{
+    position: absolute;
+    height: 300px;
+}
+.img-muestra-1 {
+    z-index: -1;
+
+}
+.img-muestra-2 {
+    z-index: -2;
+
+}
+
+.img-muestra-3 {
+    z-index: -3;
+}
+
+/*Introducción*/
+.intro {
+    text-align: center;
+    margin: 20px;
+    margin-top: -5px;
+    font-size: large;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h3 {
+    margin: 0;
+    text-decoration: double;
+    font-size: x-large;
+    padding-top: -0.5%;
+    padding-bottom: 0.5%;
+}
+
+/*minimuestra*/
+.minimuestra {
+    display: flex;
+    width: 600px;
+    height: 430px;    
+    margin-left: 28%;
+   /*  flex-direction: row; */
+/*     flex-wrap: wrap; */
+}
+
+.img-minimuestra {
+    /* width: 320px;
+    height: 400px; */
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.img-minimuestra:hover {
+    /* width: 320px;
+    height: 400px; */
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*linea del tiempo*/
 .linea-tiempo {
     width: 600px;
 }
+
+
+/*Pié de página o footer*/
+footer {
+    background-color: #432818;
+    color: #FFE6A7;
+    text-align: center;
+    padding: 15px;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1228px) {
+    .minimuestra {
+        display: flex;
+        width: 600px;
+        height: 430px;    
+        margin-left: 25%;
+    }
+}
+
+
+@media only screen and (max-width: 1120px) {
+    .minimuestra {
+        display: flex;
+        width: 600px;
+        height: 430px;    
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 1228px) {
+    .minimuestra {
+        display: flex;
+        width: 600px;
+        height: 430px;    
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 884px) {
+    .minimuestra {
+        display: flex;
+        width: 300px;
+        height: 215px;    
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 783px) {
+    .minimuestra {
+        display: flex;
+        width: 300px;
+        height: 215px;    
+        margin-left: 27%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .minimuestra {
+        display: flex;
+        width: 250px;
+        height: 165px;    
+        margin-left: 18%;
+    }
+    .intro {
+        font-size:medium;
+    }
+}
+
+/*PAGES*/
+
+/*Tecnicas fotograficas*/
+.periodo{
+    margin: 10px 10px
+}
+.periodo article {
+    text-align: justify;
+    margin: 3%;
+}
+
+.periodo p {
+    margin-bottom: 1%;
+}
+
+.periodo h3{
+    text-align: center;
+    margin-bottom: -1%;
+    margin-top: 1%;
+}
+
+/* .dos {
+    background-color: #a8312f;
+    color:#FFE6A7;
+}
+ */
+.img-tecnica {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    margin-bottom: -2%;
+}
+
+/*breakpoints*/
+
+@media only screen and (max-width: 450px) {
+    .img-tecnica {
+        position: relative;
+        width: 88%;
+        left: 9%;
+        margin-bottom: -2%;
+    }
+}
+
+/*quiénes somos*/
+.quienes-somos-introd, .mapa {
+    margin-left: 1%;
+    margin-top: 2%;
+    text-align: center;
+}
+.mapa {
+    margin-bottom: 2%;
+}
+/*contacto*/
+label, input, textarea, .tit-form {
+    margin: 0.5%;
+    margin-left: 1%;
+}
+
+
