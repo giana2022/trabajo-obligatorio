@@ -123,9 +123,11 @@ h3 {
 /*minimuestra*/
 .minimuestra {
     display: flex;
-    width: 600px;
-    height: 430px;    
-    margin-left: 28%;
+    width: 70%;
+    height: 25rem;    
+    justify-content: center;
+    align-self: center;
+    margin: 5% auto;
    /*  flex-direction: row; */
 /*     flex-wrap: wrap; */
 }
@@ -149,7 +151,10 @@ h3 {
 
 /*linea del tiempo*/
 .linea-tiempo {
-    width: 600px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+
 }
 
 
@@ -161,7 +166,7 @@ footer {
     padding: 15px;
     z-index: 0;
 }
-
+/* 
 @media only screen and (max-width: 1228px) {
     .minimuestra {
         display: flex;
@@ -206,14 +211,14 @@ footer {
         height: 215px;    
         margin-left: 27%;
     }
-}
+} */
 @media only screen and (max-width: 500px) {
-    .minimuestra {
+    /* .minimuestra {
         display: flex;
         width: 250px;
         height: 165px;    
         margin-left: 18%;
-    }
+    } */
     .intro {
         font-size:medium;
     }
