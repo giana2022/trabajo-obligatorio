@@ -306,6 +306,7 @@ footer {
     text-align: center;
     margin-bottom: 35px;
     margin-left: -150%;
+    color: antiquewhite;
 }
 
 .imagenes-movimiento img {
@@ -344,8 +345,6 @@ footer {
         font-size: 15px;
         left: 30%;
         text-align: center;
-        margin-right: 0%;
-    }
 }
 
 
