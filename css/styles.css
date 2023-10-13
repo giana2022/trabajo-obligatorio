@@ -123,9 +123,11 @@ h3 {
 /*minimuestra*/
 .minimuestra {
     display: flex;
-    width: 600px;
-    height: 430px;    
-    margin-left: 28%;
+    width: 70%;
+    height: 25rem;    
+    justify-content: center;
+    align-self: center;
+    margin: 5% auto;
    /*  flex-direction: row; */
 /*     flex-wrap: wrap; */
 }
@@ -149,7 +151,10 @@ h3 {
 
 /*linea del tiempo*/
 .linea-tiempo {
-    width: 600px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+
 }
 
 
@@ -159,9 +164,11 @@ footer {
     color: #FFE6A7;
     text-align: center;
     padding: 15px;
-   
+    z-index: 0;
+    margin-top: 3%;
 }
 
+/* 
 @media only screen and (max-width: 1228px) {
     .minimuestra {
         display: flex;
@@ -180,7 +187,8 @@ footer {
         margin-left: 25%;
     }
 }
-
+*/
+/*
 @media only screen and (max-width: 1228px) {
     .minimuestra {
         display: flex;
@@ -196,7 +204,7 @@ footer {
         width: 300px;
         height: 215px;    
         margin-left: 30%;
-    }
+    } 
 }
 
 @media only screen and (max-width: 783px) {
@@ -206,14 +214,14 @@ footer {
         height: 215px;    
         margin-left: 27%;
     }
-}
+} */
 @media only screen and (max-width: 500px) {
-    .minimuestra {
+    /* .minimuestra {
         display: flex;
         width: 250px;
         height: 165px;    
         margin-left: 18%;
-    }
+    } */
     .intro {
         font-size:medium;
     }
@@ -262,6 +270,80 @@ footer {
         margin-bottom: -2%;
     }
 }
+
+/*Fotografías*/
+.imagenes-movimiento{
+    width: 700px;
+    height: 450px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.imagenes-movimiento ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.imagenes-movimiento li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 0px;
+    left: 20%;
+    color: antiquewhite;
+}
+
+.texto h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.imagenes-movimiento img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+
+    100% { margin-left: -300%;}
+}
+
+/*Media query*/
+@media(max-width:707px) {
+    .imagenes-movimiento {
+        width: auto;
+        height: 350px;
+    }
+    .texto h2 {
+        font-size: 30px;
+    }
+}
+@media(max-width:419px) {
+    .imagenes-movimiento {
+        width: auto;
+        height: 200px;
+    }
+    .texto h2 {
+        font-size: 15px;
+        left: 30%;
+        text-align: center;
+    }
+}
+
 
 /*quiénes somos*/
 .quienes-somos-introd, .mapa {
