@@ -276,12 +276,15 @@ footer {
     padding: 0 250px;
     top: 0px;
     left: 20%;
-    color: antiquewhite;
+    color: rgb(243, 148, 24);
+    opacity: 80%;
 }
 
 .texto h2{
-    font-size: 45px;
+    font-size: 30px;
+    text-align: center;
     margin-bottom: 35px;
+    margin-left: -150%;
 }
 
 .imagenes-movimiento img {
@@ -320,6 +323,7 @@ footer {
         font-size: 15px;
         left: 30%;
         text-align: center;
+        margin-right: 0%;
     }
 }
 
