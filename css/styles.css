@@ -313,6 +313,17 @@ footer {
     width: 100%;
 }
 
+.galeria-fotografias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+.galeria-fotografias img {
+    width: 300px;
+    height: 300px;
+}
+
 @keyframes slide {
     0% { margin-left: 0;}
     20% { margin-left: 0;}
