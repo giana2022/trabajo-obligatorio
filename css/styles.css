@@ -346,7 +346,7 @@ footer {
         left: 30%;
         text-align: center;
 }
-
+}
 .galeria-fotografias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
