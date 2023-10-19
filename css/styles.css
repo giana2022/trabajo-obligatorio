@@ -278,6 +278,44 @@ footer {
         visibility: hidden;
         position: fixed;
         z-index: 1;
+        left: 0;
+        padding-top: 15%;
+        padding-bottom: 50%;
+        display: grid;
+    }
+    
+    nav a {
+        margin: 10% 5%;
+        font-size: 25px;
+    }
+    
+    .active {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .boton-menu {
+        visibility: visible;
+    }
+    nav {
+        visibility: hidden;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        padding-top: 15%;
+        padding-bottom: 100%;
+        display: grid;
+        margin: 0;
+    }
+    
+    nav a {
+        margin: 7% 5%;
+        font-size: 20px;
+    }
+    
+    .active {
+        visibility: visible;
     }
 }
 
@@ -455,6 +493,12 @@ transition: all 0.1s ease-in-out;}
 }
 .mapa {
     margin-bottom: 2%;
+}
+
+.footer-quienes-somos {
+    bottom: 0;
+    top: 100%;
+    margin-top: 300px;
 }
 /*contacto*/
 label, input, textarea, .tit-form {
