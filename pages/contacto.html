@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FotoHistoria</title>
     <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="../css/form-contacto.css">
     <link rel="shortcut icon" href="..\img\camera.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        function validar() {
+          let nombre = document.forms["Form"]["nombre"].value;
+          let email = document.forms["Form"]["email"].value;
+          let mensaje = document.forms["Form"]["mensaje"].value;
+          if (nombre == "") {
+            alert("Escribe tu nombre por favor...");
+            return false;
+          }
+          if (email == "") {
+            alert("Escribe tu email por favor...");
+            return false;
+          }
+          if (mensaje == "") {
+            alert("Escribe un mensaje por favor...");
+            return false;
+          }
+        }
+        </script>
 </head>
 <body>
     <header>
@@ -19,21 +39,32 @@
         <a href="..\pages\quienes-somos.html">¿Quiénes somos?</a>
         <a href="..\pages\contacto.html">Contacto</a>
     </nav>
-    <section class="formulario">
-        <h3 class="tit-form">Datos del remitente</h3>
-        <form action="">
-            <label for="nombre">Nombre</label><br>
-            <input type="text" name="nombre" id=""><br>
-            <label for="apellido">Apellido</label><br>
-            <input type="text" name="apellido" id=""><br>
-            <label for="mail">Email</label><br>
-            <input type="email" name="mail" id=""><br>
-            <label for="mensaje">Mensaje para el destinatario</label><br>
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea><br>
-            <input type="submit" value="Subir">
-            <button class="borrar">Borrar</button>
-        </form>
-    </section>
+
+   
+    <div class="contact_form">
+        <p>Escríbenos y en breve nos contactaremos con usted</p><br>
+    
+        <form name="Form" action="" onsubmit="return validar()" method="post">
+    
+            <label>Nombre <span>*</span></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre...">
+    
+            <label>Email <span>*</span></label>
+            <input type="email" name="email" id="email" placeholder="email...">
+    
+            <label>Mensaje <span>*</span></label>
+            <textarea name="mensaje" id="mensaje" placeholder="Deja aquí tu comentario..."></textarea>
+            <button type="submit" name="enviar" id="enviar">
+                <p>Enviar</p>
+            </button>
+    
+            <p>
+                <span> * </span>los campos son obligatorios.
+            </p>
+    
+        </form>   
+    </div>
+   </section>
     <button class="boton-menu" id="boton-menu" onclick="">Menú</button>
     <footer>
         <p>Copyright CodoACodo</p>
