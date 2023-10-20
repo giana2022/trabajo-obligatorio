@@ -101,6 +101,7 @@ header a:hover {
 .img-muestra, .img-init{
     position: absolute;
     height: 300px;
+    width: 100%;
 }
 .img-muestra-1 {
     z-index: -1;
@@ -229,16 +230,96 @@ footer {
     }
 } */
 @media only screen and (max-width: 500px) {
-    /* .minimuestra {
+    .minimuestra {
         display: flex;
-        width: 250px;
+        width: 100%;
         height: 165px;    
         margin-left: 18%;
-    } */
+    } 
     .intro {
         font-size:medium;
     }
+    .minimuestra {
+        display: flex;
+        width: 100%;
+        height: 25rem;    
+        justify-content: center;
+        align-self: center;
+        margin: 5% auto;
+       /*  flex-direction: row; */
+    /*     flex-wrap: wrap; */
+    }  
 }
+
+/*Diseño responsive*/
+.boton-menu {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    bottom: 5%;
+    right: 5%;
+    background-color:#a32421;
+    color:#FFE6A7;
+    text-decoration: none;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 30%;
+    font-size: 20px;
+}
+.boton-menu:hover {
+    background-color: #b82e2b;
+    color: #FFE6A7;
+}
+
+@media only screen and (max-width: 740px){
+    .boton-menu {
+        visibility: visible;
+    }
+    nav {
+        visibility: hidden;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        padding-top: 15%;
+        padding-bottom: 50%;
+        display: grid;
+    }
+    
+    nav a {
+        margin: 10% 5%;
+        font-size: 25px;
+    }
+    
+    .active {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .boton-menu {
+        visibility: visible;
+    }
+    nav {
+        visibility: hidden;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        padding-top: 15%;
+        padding-bottom: 100%;
+        display: grid;
+        margin: 0;
+    }
+    
+    nav a {
+        margin: 7% 5%;
+        font-size: 20px;
+    }
+    
+    .active {
+        visibility: visible;
+    }
+}
+
 
 /*PAGES*/
 
@@ -413,6 +494,12 @@ transition: all 0.1s ease-in-out;}
 }
 .mapa {
     margin-bottom: 2%;
+}
+
+.footer-quienes-somos {
+    bottom: 0;
+    top: 100%;
+    margin-top: 300px;
 }
 /*contacto*/
 label, input, textarea, .tit-form {
