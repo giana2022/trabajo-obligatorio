@@ -387,6 +387,11 @@ footer {
 }
 
 /*Fotografías*/
+.instrucciones {
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+}
 .imagenes-movimiento{
     width: 700px;
     height: 450px;
@@ -538,3 +543,4 @@ label, input, textarea, .tit-form {
     margin: 0.5%;
     margin-left: 1%;
 }
+
