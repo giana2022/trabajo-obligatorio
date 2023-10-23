@@ -30,3 +30,6 @@ boton.addEventListener('click',()=>{
     }
 });
 
+
+let botmenu = document.getElementById("menud-p");
+botmenu.innerText.toLowerCase()
