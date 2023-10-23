@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 0;
+    margin-bottom: 0;
 }
 
 header, nav, .intro, .linea-tiempo, footer {
@@ -46,8 +47,10 @@ a:not(img){
     color:#FFE6A7;
     text-decoration: none;
     font-size: large;
-    padding: 25px;
+    padding: 0px;
+    padding-left: 12px;
     padding-top: 5px;
+    padding-right: 12px;
     margin: 5px;
 }
 
@@ -61,6 +64,7 @@ a:hover :not(img) {
 
 a:hover :not(img) {
     padding: 0;
+    padding-right: 12px;
     background-color:#b82e2b;
     color: antiquewhite;
 }
@@ -92,28 +96,34 @@ header a:hover {
     
    
 .galeria-inicio {
-    width: 100%;
-    height: 550px;
-    z-index: 0;
-    background-color: aliceblue;
     display: flex;
-}
-.img-muestra, .img-init{
-    position: absolute;
-    height: 300px;
     width: 100%;
-}
-.img-muestra-1 {
-    z-index: -1;
+    margin: 0 auto;
+    overflow: hidden;
 
 }
-.img-muestra-2 {
-    z-index: -2;
-
-}
-
 .img-muestra-3 {
-    z-index: -3;
+    justify-content: center;
+    width: 270%;
+}
+.introducc-index {
+    position: absolute;
+    top: 35%;
+    z-index: 0;
+    background-color: white;
+    opacity: 80%;
+    text-align: center;
+    font-size: 200%;
+    margin: 20%;
+    border-radius: 15%;
+    padding: 5%;
+    top: 20%;
+}
+
+@media only screen and (max-width: 941) {
+    .introducc-index{
+        font-size: 300%;
+    }
 }
 
 /*Introducción*/
@@ -130,7 +140,7 @@ h3 {
     margin: 0;
     text-decoration: double;
     font-size: x-large;
-    padding-top: -0.5%;
+    padding-top: 1.5%;
     padding-bottom: 0.5%;
 }
 
@@ -180,6 +190,7 @@ footer {
     padding: 15px;
     z-index: 0;
     margin-top: 3%;
+    margin-bottom: 0;
 }
 
 /* 
@@ -271,6 +282,16 @@ footer {
     color: #FFE6A7;
 }
 
+.menud {
+    width: 100px;
+    height: 60px;
+    border-radius: 27%;
+    font-size: 20px;
+    padding: 15px 15px;
+    right: 7%;
+    bottom: 4%;
+}
+
 @media only screen and (max-width: 740px){
     .boton-menu {
         visibility: visible;
@@ -281,7 +302,7 @@ footer {
         z-index: 1;
         left: 0;
         padding-top: 15%;
-        padding-bottom: 50%;
+        padding-bottom: 100%;
         display: grid;
     }
     
@@ -366,6 +387,11 @@ footer {
 }
 
 /*Fotografías*/
+.instrucciones {
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+}
 .imagenes-movimiento{
     width: 700px;
     height: 450px;
@@ -446,7 +472,8 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1rem;
     align-items: center;
-    margin: 1.5% 1%;
+    margin-left: 0;
+    margin-right: 5%;
 }
 .galeria-fotografias img {
     width: 18rem;
@@ -464,11 +491,13 @@ transition: all 0.1s ease-in-out;}
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: 1rem;
         align-items: center;
-        margin: 1.5% 1%;
+        margin-left: -5;
+        margin-right: 5%;
     }
     .galeria-fotografias img {
-        width: 15rem;
-        height: 15rem;
+        width: 5rem;
+        height: 5rem;
+        margin-left: -5%;
     }
     
 }
@@ -499,10 +528,19 @@ transition: all 0.1s ease-in-out;}
 .footer-quienes-somos {
     bottom: 0;
     top: 100%;
-    margin-top: 300px;
+    margin-top: 60%;
+    margin-bottom: 0;
 }
+
+@media only screen and (max-width: 624px) {
+    .mapa iframe {
+        width: 70%;
+    }
+}
+
 /*contacto*/
 label, input, textarea, .tit-form {
     margin: 0.5%;
     margin-left: 1%;
 }
+
