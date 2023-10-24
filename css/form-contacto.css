@@ -104,3 +104,11 @@
     margin-bottom: 0;
   }
 
+.menud {
+  text-transform: capitalize;
+  width: auto;
+  bottom: 2.8%;
+  right: 5%;
+  padding: 15px 15px;
+  border-radius: 30%;
+}
