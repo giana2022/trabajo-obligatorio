@@ -86,14 +86,7 @@ header a:hover {
     background-color:#6F1D1B;
     color: antiquewhite;
 }
-
-
-/*imagenes*/
-/* 
-.galeria-inicio {
-        visibility: hidden; 
-    } */
-    
+   
    
 .galeria-inicio {
     display: flex;
@@ -193,53 +186,6 @@ footer {
     margin-bottom: 0;
 }
 
-/* 
-@media only screen and (max-width: 1228px) {
-    .minimuestra {
-        display: flex;
-        width: 600px;
-        height: 430px;    
-        margin-left: 25%;
-    }
-}
-
-
-@media only screen and (max-width: 1120px) {
-    .minimuestra {
-        display: flex;
-        width: 600px;
-        height: 430px;    
-        margin-left: 25%;
-    }
-}
-*/
-/*
-@media only screen and (max-width: 1228px) {
-    .minimuestra {
-        display: flex;
-        width: 600px;
-        height: 430px;    
-        margin-left: 20%;
-    }
-}
-
-@media only screen and (max-width: 884px) {
-    .minimuestra {
-        display: flex;
-        width: 300px;
-        height: 215px;    
-        margin-left: 30%;
-    } 
-}
-
-@media only screen and (max-width: 783px) {
-    .minimuestra {
-        display: flex;
-        width: 300px;
-        height: 215px;    
-        margin-left: 27%;
-    }
-} */
 @media only screen and (max-width: 500px) {
     .minimuestra {
         display: flex;
@@ -363,11 +309,6 @@ footer {
     margin-top: 1%;
 }
 
-/* .dos {
-    background-color: #a8312f;
-    color:#FFE6A7;
-}
- */
 .img-tecnica {
     position: relative;
     width: 50%;
@@ -494,6 +435,7 @@ footer {
     align-items: center;
     margin-left: 0;
     margin-right: 5%;
+    justify-content: space-around;
 }
 .galeria-fotografias img {
     width: 18rem;
