@@ -104,6 +104,14 @@
     margin-bottom: 0;
   }
 
+
+.mensaje {
+  margin: 40px;
+  color: #6F1D1B;
+  text-align: center;
+}
+
+
 .menud {
   text-transform: capitalize;
   width: auto;
@@ -112,3 +120,4 @@
   padding: 15px 15px;
   border-radius: 30%;
 }
+
