@@ -1,4 +1,4 @@
-# trabajo-obligatorio
+# Trabajo obligatorio 
 Url de nuestro proyecto: https://giana2022.github.io/trabajo-obligatorio/
 
 Nota sobre participantes:
