@@ -12,7 +12,7 @@ boton.addEventListener('click',()=>{
     }
 });
 
-function validar() {
+/* function validar(nombr, mail) {
     let nombre = document.forms["Form"]["nombre"].value;
     let email = document.forms["Form"]["email"].value;
     let mensaje = document.forms["Form"]["mensaje"].value;
@@ -28,6 +28,12 @@ function validar() {
       alert("Escribe un mensaje por favor...");
       return false;
     }
+    if(nombre!==""){
+      let boolean = validarTexto(nombr, mail);
+      if (boolean == false) {
+        return false
+      }
+    }
   }
 
 function validarTexto(nombre, email) {
@@ -37,20 +43,12 @@ function validarTexto(nombre, email) {
    // let regemail = new RegExp('/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/');
     if (reg.test(valorNombre)){
         console.log(valorNombre, 'si coincide')
-        /*
-        if (regemail.test(valorEmail)){
-            console.log(valorEmail, 'si coincide')
-            return true
-        }
-        else {
-            console.log(valorEmail, 'no coincide')
-            alert('Valor incorrecto para mail')
-            return false
-        } */
+        return true
     }
     else {
         console.log(valorNombre, 'no coincide')
         alert('Valor incorrecto solo se admiten letras')
+        console.log(false)
         return false
     }
    
@@ -61,6 +59,5 @@ email = document.getElementById('email'),
 enviar = document.getElementById('enviar');
 let form = document.getElementById('formulario');
 enviar.addEventListener("click", function(){
-  validar()
-  validarTexto(nombre, email)
-})
+  validar(nombre, email)
+  /* validarTexto() */
